@@ -1,6 +1,7 @@
 package guru.springframework.sfgdi;
 
 import guru.springframework.sfgdi.controllers.*;
+import guru.springframework.sfgdi.services.PetService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -10,10 +11,14 @@ public class SfgDiApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SfgDiApplication.class, args);
-		MyController myController = (MyController) context.getBean("myController");
+
 		System.out.println("---------- Primary Bean");
-		String greeting = myController.getGreeting();
-		System.out.println(greeting);
+		MyController myController = (MyController) context.getBean("myController");
+		System.out.println(myController.getGreeting());
+
+		System.out.println("---------- Best Pet");
+		PetController petController = (PetController) context.getBean("petController");
+		System.out.println(petController.whichPetIsTheBest());
 
 		System.out.println("---------- Profile Beans");
 		I18nController i18nController = (I18nController) context.getBean("i18nController");
