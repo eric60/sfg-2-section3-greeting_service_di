@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class MyController {
+public class PrimaryBeanController {
     private final GreetingService greetingService;
 
-    public MyController(GreetingService greetingService) {
+    public PrimaryBeanController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 

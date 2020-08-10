@@ -4,16 +4,18 @@ import guru.springframework.sfgdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"guru.springframework"})
 public class SfgDiApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SfgDiApplication.class, args);
 
 		System.out.println("---------- Primary Bean");
-		MyController myController = (MyController) context.getBean("myController");
-		System.out.println(myController.getGreeting());
+		PrimaryBeanController primaryBeanController = (PrimaryBeanController) context.getBean("primaryBeanController");
+		System.out.println(primaryBeanController.getGreeting());
 
 		System.out.println("---------- Best Pet");
 		PetController petController = (PetController) context.getBean("petController");
