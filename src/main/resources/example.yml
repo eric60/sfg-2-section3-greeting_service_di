@@ -1,0 +1,27 @@
+name:  John
+
+names:
+  - John
+  - Paul
+  - Ringo
+
+pound_sign:  "#"
+
+book:
+  author:  Joe Buck
+  publisher:  random house
+
+boolean_truth:  True # true, yes
+boolean_false:  False # false, No, FALSE
+
+string_val:  "This is a quote"
+
+include_new_lines:  |
+  asdf adfs asdf
+  asf asdfa af
+  adfa adfa fsa
+
+ignore_new_lines:  >
+  this is
+  just one long
+  string

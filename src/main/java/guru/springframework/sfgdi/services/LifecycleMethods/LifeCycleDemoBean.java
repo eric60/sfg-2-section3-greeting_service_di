@@ -15,7 +15,7 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
 
 
     public LifeCycleDemoBean() {
-        System.out.println("## I'm in the LifeCycleBean Constructor");
+        System.out.println("\n## I'm in the LifeCycleBean Constructor");
     }
 
     @Override
