@@ -1,7 +1,6 @@
-package guru.springframework.sfgdi.services.GreetingServices;
+package guru.springframework.sfgdi.services.GreetingServices.I18nGreetingServices;
 
-import guru.springframework.sfgdi.services.GreetingServices.I18nGreetingServices.I18nEnglishGreetingService;
-import guru.springframework.sfgdi.services.GreetingServices.I18nGreetingServices.I18nSpanishService;
+import guru.springframework.sfgdi.services.GreetingServices.GreetingService;
 import guru.springframework.sfgdi.services.GreetingServices.repositories.GreetingRepository;
 import org.springframework.beans.factory.annotation.Value;
 
