@@ -1,0 +1,2 @@
+guru:
+  username: Eric in spanish # Override application.properties since this has the -es profile marking.

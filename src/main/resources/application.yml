@@ -7,7 +7,12 @@ guru:
 # FIle separator --- Spring profiles overrides file 1 without it
 ---
 spring:
+  profiles:
+    active: es, dog
+---
+spring:
   profiles:  es
+
 guru:
   jms:
     username:  JMS Username in spanish

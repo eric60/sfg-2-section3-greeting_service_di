@@ -1,6 +1,9 @@
 package guru.springframework.sfgdi;
 
 import guru.springframework.sfgdi.controllers.*;
+import guru.springframework.sfgdi.controllers.DIControllers.ConstructorInjectedController;
+import guru.springframework.sfgdi.controllers.DIControllers.PropertyInjectedController;
+import guru.springframework.sfgdi.controllers.DIControllers.SetterInjectedController;
 import guru.springframework.sfgdi.exampleBeans.FakeDataSource;
 import guru.springframework.sfgdi.exampleBeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
@@ -39,7 +42,7 @@ public class SfgDiApplication {
 		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) context.getBean("constructorInjectedController");
 		System.out.println(constructorInjectedController.getGreeting());
 
-		System.out.println("\n---------- External properties file");
+		System.out.println("\n---------- External properties file properties");
 		FakeDataSource fakeDataSource = context.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource.getUsername());
 

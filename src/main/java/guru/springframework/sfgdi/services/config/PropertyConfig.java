@@ -19,6 +19,7 @@ import org.springframework.core.env.Environment;
         @PropertySource("classpath:jms.properties")
 })*/
 public class PropertyConfig {
+
     @Autowired
     Environment env;
 
@@ -40,8 +41,6 @@ public class PropertyConfig {
 
     @Value("${guru.jms.dburl")
     String jmsDburl;
-
-
 
     @Bean
     public FakeDataSource fakeDataSource() {

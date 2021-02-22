@@ -1,6 +1,7 @@
 package guru.springframework.sfgdi.exampleBeans;
 
 public class FakeJmsBroker {
+
     private String username;
     private String password;
     private String dburl;
